@@ -10,9 +10,28 @@ body {
     .nav {
         position: fixed;
         top: 0;
-        right: 0;
          li {
             list-style-type: none;
+        }
+
+        @include breakpoint(xsmall) {
+            ul {
+                display: none;
+                &.open {
+                    border: $guide;
+                    display: block;
+                    width: 100vw;
+                    position: absolute;
+                    left: 50%;
+                    right: 50%;
+                    margin-left: -5vw;
+                    // margin-right: -58vw;
+                    // height: 90vh;
+                    padding: 0 100px 50px;
+                    background: white;
+                    overflow-y: scroll;
+                }
+            }
         } 
     }
 }

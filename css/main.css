@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  color: black; }
+  @media only screen and (max-width: 767px) {
+    .container {
+      padding: 0 1em; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media only screen and (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media only screen and (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+
+body div {
+  border: 1px dashed cyan; }
+
+body .nav {
+  position: fixed;
+  top: 0; }
+  body .nav li {
+    list-style-type: none; }
+  @media only screen and (max-width: 767px) {
+    body .nav ul {
+      display: none; }
+      body .nav ul.open {
+        border: 1px dashed cyan;
+        display: block;
+        width: 100vw;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        margin-left: -5vw;
+        padding: 0 100px 50px;
+        background: white;
+        overflow-y: scroll; } }
