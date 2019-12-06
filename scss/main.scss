@@ -1,0 +1,18 @@
+@import 'mixins/breakpoints.scss';
+@import 'grid.scss';
+
+$guide: 1px dashed cyan;
+
+body {
+    div {
+        border: $guide;
+    }
+    .nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+         li {
+            list-style-type: none;
+        } 
+    }
+}

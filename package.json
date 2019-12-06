@@ -1,0 +1,23 @@
+{
+  "name": "mobile-navigation-menu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/construktivist/mobile-navigation-menu.git"
+  },
+  "author": "Keegan Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/construktivist/mobile-navigation-menu/issues"
+  },
+  "homepage": "https://github.com/construktivist/mobile-navigation-menu#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
