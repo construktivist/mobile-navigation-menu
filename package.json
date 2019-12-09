@@ -19,5 +19,6 @@
   "homepage": "https://github.com/construktivist/mobile-navigation-menu#readme",
   "devDependencies": {
     "node-sass": "^4.13.0"
-  }
+  },
+  "dependencies": {}
 }
