@@ -15,48 +15,64 @@ body {
     div {
         border: $guide;
     }
+
     .nav {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 50px;
-        button {
-            position: absolute;
-            right: 0;
-            width: 50px;
-            height: 47px;
-            cursor: pointer;
-        }
-        ul {
-            display: none;
-            &.open {
-                border: $guide;
-                display: block;
-                width: 100%;
+        .nav-wrapper {
+            width:100%;
+            button {
                 position: absolute;
-                top: 48px;
-                padding: 0 100px 50px;
-                background: white;
-                overflow-y: scroll;
-                
-                > li {
-                    height: auto;
-                    text-align: center;
+                right: 0;
+                width: 50px;
+                height: 47px;
+                cursor: pointer;
+            }
+            ul {
+                display: none;
+                &.open {
+                    border: $guide;
+                    display: block;
                     width: 100%;
-                    margin: 20px 0;
-                    list-style-type: none;
+                    position: absolute;
+                    top: 48px;
+                    padding: 0 100px 50px;
+                    background: white;
+                    overflow-y: scroll;
+                    
+                    > li {
+                        height: auto;
+                        text-align: center;
+                        width: 100%;
+                        margin: 20px 0;
+                        list-style-type: none;
+                    }
                 }
             }
         }
 
         @include breakpoint(small) {
-            ul {
-                display: block;
-                &.desktop {
-                    width: 100%;
+            .nav-wrapper{
+                button {
+                    display: none;
                 }
-            }
+                ul {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    display: block;
+                    text-align: center;
+                    li {
+                        display:inline-block;
+                        margin: 0 7%;
+                        height: 100%;
+                        position: relative;
+                        bottom: 0; 
+                    }
+                } 
+            }   
         }
     }
 }
